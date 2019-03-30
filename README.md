@@ -1,27 +1,21 @@
-# Frontend
+# Prueba técnica Frontend QuadMinds
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+Este Frontend fue desarrollado con Angular versión 7.3.3.
 
-## Development server
+## Diseño
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para los temas de diseño fue utilizado angular material versión 7.3.6, angular flex-layout versión 7.0.0-beta.24 y ngx-datatable versión . Para la notificación del registro correcto o incorrecto del usuario, se utilizó sweetalert2 versión 8.7.0.
 
-## Code scaffolding
+## Instalación
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Se debe descargar la aplicación mediante el siguiente comando:
 
-## Build
+git clone https://github.com/UnderWeb/quadminds-frontend.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2. Una vez descargado, hay que dirigirse al directorio o carpeta donde se encuentra la aplicación para proceder a instalar las librerías de dependencias, ejecutando el siguiente comando:
 
-## Running unit tests
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Servidor de desarrollo
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Se debe arrancar ng serve para levantar el frontend de desarrollo.

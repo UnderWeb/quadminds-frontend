@@ -1,0 +1,166 @@
+/*******************
+ Main container
+*******************/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mat-drawer-container {
+    background: $bodycolor;
+}
+
+html .page-wrapper {
+  height: calc(100vh - 64px);
+  .page-content {
+    /*padding: 15px;*/
+    padding: 1px;
+  }
+}
+
+/*******************
+Pricing scss
+******************/
+html {
+    .popular-plan {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    .price-listing {
+        margin-bottom: 30px;
+        .mat-list-item {
+            height: auto;
+            .mat-list-item-content {
+                display: block;
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+/*******************
+Smart table
+******************/
+.smart-table tr td, .smart-table tr th {
+    padding: 15px !important;
+    text-align:left;
+}
+
+.ng2-smart-action-add-add {
+    color: $white !important;
+    background: $themecolor;
+    padding: 8px 15px;
+    border-radius: $radius;
+    white-space: nowrap;
+}
+
+.ng2-smart-pagination-nav {
+    margin-left: auto;
+}
+
+.ng2-smart-pagination-nav .pagination > li > a {
+    line-height: 1rem;
+}
+
+.ng2-smart-filter .form-control {
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    min-height: 38px;
+}
+
+.form-control {
+    border:1px solid $border;
+}
+/**********************
+Overall Responsive table
+***********************/
+.responsive-table {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    .mat-cell:first-of-type,
+    .mat-footer-cell:first-of-type,
+    .mat-header-cell:first-of-type {
+        padding-left: 0;
+    }
+    .header-label {
+        display: none;
+    }
+    .mat-table {
+        overflow: auto;
+        max-height: 100%;
+    }
+}
+
+.table-responsive{
+    overflow: auto;
+}
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: $themecolor;
+    background-color: $white;
+    border: 1px solid $border;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: $bodytext;
+    text-decoration: none;
+    background-color: $light;
+    border-color: $border;
+}
+
+.page-link:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.page-link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: $white;
+    background-color: $themecolor;
+    border-color: $themecolor;
+}
+
+.page-item.disabled .page-link {
+    color: $muted;
+    pointer-events: none;
+    cursor: auto;
+    background-color: $white;
+    border-color: $border;
+}
